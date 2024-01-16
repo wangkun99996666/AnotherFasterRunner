@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import url
+# from django.conf.urls import url  # Django 4 is deprecated for url() functions
 from django.urls import path, include, re_path
 from rest_framework.routers import DefaultRouter
 
@@ -47,9 +47,9 @@ system_router.register(r'log_records', system_views.LogRecordViewSet)
 urlpatterns = [
     path(r"login", obtain_jwt_token),
     path('admin/', admin.site.urls),
-    url(r'^docs/', schema_view, name="docs"),
-    url(r'^accounts/', include('rest_framework.urls',)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework_api_auth')),
+    re_path(r'^docs/', schema_view, name="docs"),
+    re_path(r'^accounts/', include('rest_framework.urls',)),
+    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework_api_auth')),
     path('api/user/', include('fastuser.urls')),
     path('api/fastrunner/', include('fastrunner.urls')),
     path('api/system/', include(system_router.urls)),
@@ -60,8 +60,8 @@ urlpatterns = [
     re_path(r'^get_report_url/$', run_all_auto_case.get_report_url, name='get_report_url'),
 
     # swagger
-    url(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    url(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
 ]
