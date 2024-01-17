@@ -7,10 +7,15 @@ import platform
 import time
 import unittest
 from base64 import b64encode
-from collections import Iterable
+try:
+    from collections.abc import Iterable
+except ImportError:
+    from collections import Iterable
+
 from datetime import datetime
 
-from jinja2 import Template, escape
+from jinja2 import Template
+from markupsafe import escape
 
 from httprunner.__about__ import __version__
 from httprunner.compat import basestring, bytes, json, numeric_types
