@@ -43,6 +43,7 @@ RUN apt-get update && \
 COPY --from=Base /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
 WORKDIR /app
 COPY . /app
+RUN  cp -r /app/FasterRunner/rest_framework_jwt /usr/local/lib/python3.9/site-packages/
 RUN chmod +x /app/start.sh
 
 RUN python manage.py collectstatic --settings=FasterRunner.settings.docker --no-input

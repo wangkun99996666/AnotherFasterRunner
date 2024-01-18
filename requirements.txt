@@ -37,6 +37,7 @@ djangorestframework==3.14.0
 drf-yasg==1.21.7
 Faker==22.2.0
 genson==1.2.2
+gevent==23.9.1
 gunicorn==21.2.0
 har2case==0.3.1
 idna==3.6
