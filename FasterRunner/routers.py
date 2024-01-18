@@ -24,4 +24,3 @@ class AutoChoiceDataBase:
             return 'default'
         else:
             return 'remote'
-

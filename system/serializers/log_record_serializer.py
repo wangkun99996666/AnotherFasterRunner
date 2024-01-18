@@ -9,6 +9,7 @@
 from rest_framework import serializers
 from system.models import LogRecord
 
+
 class LogRecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = LogRecord

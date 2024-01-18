@@ -25,7 +25,6 @@ app.config_from_object(obj, namespace="CELERY")
 # Load task modules from all registered Django app configs.
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
-
 app.conf.update(
     CELERY_BEAT_SCHEDULER="django_celery_beat.schedulers:DatabaseScheduler",
     task_reject_on_worker_lost=True,

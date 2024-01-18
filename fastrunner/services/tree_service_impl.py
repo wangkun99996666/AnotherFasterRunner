@@ -44,7 +44,7 @@ class TreeService:
         return StandResponse[TreeOut](**TREE_ADD_SUCCESS, data=TreeOut(**tree))
 
     def patch(
-        self, pk: int, payload: TreeUpdateIn
+            self, pk: int, payload: TreeUpdateIn
     ) -> StandResponse[Union[TreeOut, None]]:
         try:
             pk: int = self.curd.update_obj_by_pk(pk, None, payload.dict())

@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .models import LogRecord
 from system.serializers.log_record_serializer import LogRecordSerializer
 
+
 class LogRecordFilter(django_filters.FilterSet):
     request_id = django_filters.CharFilter(field_name='request_id', lookup_expr='exact')
     message = django_filters.CharFilter(field_name='message', lookup_expr='icontains')
@@ -12,6 +13,7 @@ class LogRecordFilter(django_filters.FilterSet):
     class Meta:
         model = LogRecord
         fields = ['request_id', 'message']
+
 
 class LogRecordViewSet(viewsets.ModelViewSet):
     queryset = LogRecord.objects.all()
