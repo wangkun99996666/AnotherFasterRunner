@@ -142,6 +142,7 @@ class DashBoardView(GenericViewSet):
     @method_decorator(request_log(level="INFO"))
     def get(self, request):
         _, report_status = prepare.aggregate_reports_by_status(0)
+        report_status = [report_status[1], report_status[0]]  # 前端成功、失败显示反了，故这里调整下
         _, report_type = prepare.aggregate_reports_by_type(0)
         report_day = prepare.aggregate_reports_or_case_bydate("day", models.Report)
         report_week = prepare.aggregate_reports_or_case_bydate("week", models.Report)

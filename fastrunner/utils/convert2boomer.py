@@ -14,16 +14,16 @@ class JsonValueType(str, Enum):
 
 
 class BoomerExtendCmd(BaseModel):
-    max_rps: Optional[int]
+    max_rps: Optional[int] = 0
     master_host: str = '10.129.144.24'
     master_port: int = 5557
     json_value_type: str = JsonValueType.interface.value
-    replace_str_index: dict
+    replace_str_index: dict = {}
     disable_keepalive: conint(gt=0, lt=1) = 0
-    cpu_profile: Optional[str]
-    cpu_profile_duration: Optional[int]
-    mem_profile: Optional[str]
-    mem_profile_duration: Optional[int]
+    cpu_profile: Optional[str] = ''
+    cpu_profile_duration: Optional[int] = ''
+    mem_profile: Optional[str] = ''
+    mem_profile_duration: Optional[int] = ''
 
 
 class BoomerIn(BaseModel):

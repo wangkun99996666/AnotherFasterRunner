@@ -31,8 +31,8 @@ config_err = {
 def run_api(request):
     """ run api by body
     """
-    name = request.data.pop('config')
-    host = request.data.pop("host")
+    name = request.data.pop('config', '请选择')
+    host = request.data.pop("host", '请选择')
     api = Format(request.data)
     api.parse()
 
@@ -60,9 +60,9 @@ def run_api(request):
 def run_api_pk(request, **kwargs):
     """run api by pk and config
     """
-    host = request.query_params["host"]
+    host = request.query_params.get("host", "请选择")
     api = models.API.objects.get(id=kwargs['pk'])
-    name = request.query_params["config"]
+    name = request.query_params.get("config", "请选择")
     config = None if name == '请选择' else eval(models.Config.objects.get(name=name, project=api.project).body)
 
     test_case = eval(api.body)
@@ -404,12 +404,12 @@ def run_test(request):
     body = request.data["body"]
     config = request.data.get("config", None)
     project = request.data["project"]
-    host = request.data["host"]
+    host = request.data.get("host", "请选择")
 
     if host != "请选择":
         host = models.HostIP.objects.get(name=host, project=project).value.splitlines()
 
-    if config:
+    if config.get("name") != "请选择":
         config = eval(models.Config.objects.get(project=project, name=config["name"]).body)
 
     summary = loader.debug_api(

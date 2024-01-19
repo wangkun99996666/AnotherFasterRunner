@@ -47,7 +47,7 @@ system_router.register(r'log_records', system_views.LogRecordViewSet)
 urlpatterns = [
     path(r"login", obtain_jwt_token),
     path('admin/', admin.site.urls),
-    re_path(r'^docs/', schema_view, name="docs"),
+    re_path(r'^docs/', schema_view.with_ui, name="docs"),
     re_path(r'^accounts/', include('rest_framework.urls',)),
     re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework_api_auth')),
     path('api/user/', include('fastuser.urls')),
