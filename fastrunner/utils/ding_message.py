@@ -1,12 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# @Author:梨花菜
-# @File: ding_message.py
-# @Time : 2018/12/21 15:11
-# @Email: lihuacai168@gmail.com
-# @Software: PyCharm
-
 import logging
 # import os
 # os.environ.setdefault(

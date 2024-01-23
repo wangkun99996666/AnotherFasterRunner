@@ -1,10 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-# @Author: 花菜
-# @File: tree_service_impl.py
-# @Time : 2022/9/4 18:57
-# @Email: lihuacai168@gmail.com
-
 import traceback
 from typing import Union
 

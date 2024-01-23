@@ -1,10 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# @Author: 花菜
-# @File: day.py
-# @Time : 2020/11/4 14:53
-# @Email: lihuacai168@gmail.com
 import datetime
 
 from httprunner.builtin import get_ts_int

@@ -1,11 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-# @Author: 花菜
-# @File: test_tree_service_impl.py
-# @Time : 2022/9/5 00:22
-# @Email: lihuacai168@gmail.com
-
-
 from django.test import TestCase
 
 from fastrunner.dto.tree_dto import TreeUniqueIn, TreeUpdateIn

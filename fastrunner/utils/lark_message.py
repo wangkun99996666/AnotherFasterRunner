@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2020/8/11 16:12
-# @Author  : lihuacai
-# @Email   : lihuacai168@gmail.com
-# @File    : lark_message.py
-# @Software: PyCharm
-
 import requests
 import json
 
