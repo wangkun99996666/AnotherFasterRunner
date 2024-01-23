@@ -30,7 +30,8 @@ def parse_locustfile(file_path):
         locustfile_path = gen_locustfile(file_path)
     else:
         # '' or other suffix
-        color_print("file type should be YAML/JSON/Python, exit.", "RED")
+        # color_print("file type should be YAML/JSON/Python, exit.", "RED")
+        logger.error("file type should be YAML/JSON/Python, exit.", "RED")
         sys.exit(1)
 
     return locustfile_path

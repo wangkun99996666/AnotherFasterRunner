@@ -1,11 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# @Author: 花菜
-# @File: swagger.py
-# @Time : 2020/12/28 22:04
-# @Email: lihuacai168@gmail.com
-
 from drf_yasg.inspectors import SwaggerAutoSchema
 
 

@@ -1,11 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# @Author:梨花菜
-# @File: database.py 
-# @Time : 2019/6/13 17:08
-# @Email: lihuacai168@gmail.com
-# @Software: PyCharm
 import platform
 
 

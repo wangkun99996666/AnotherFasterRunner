@@ -1,11 +1,3 @@
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-# @Author: 花菜
-# @File: log.py
-# @Time : 2023/9/17 22:25
-# @Email: lihuacai168@gmail.com
-
 import logging
 
 
