@@ -6,12 +6,12 @@
             </span>
             <span class="right">
                 <div style="float: right; color: #d9d9d9; margin-right: 100px">
-                    <a :href="githubURL" style="padding-left: 10px; color: white;" target="_blank">
-                        <span style="font-size: large" >GitHub</span>
-                    </a>
-                    <a :href="docURL" style="padding-left: 10px; margin-right: 10px; color: white;" target="_blank">
-                        <span style="font-size: large"  >项目文档</span>
-                    </a>
+<!--                    <a :href="githubURL" style="padding-left: 10px; color: white;" target="_blank">-->
+<!--                        <span style="font-size: large" >GitHub</span>-->
+<!--                    </a>-->
+<!--                    <a :href="docURL" style="padding-left: 10px; margin-right: 10px; color: white;" target="_blank">-->
+<!--                        <span style="font-size: large"  >项目文档</span>-->
+<!--                    </a>-->
                     <i class="iconfont">&#xe61c;</i>
                     <span v-text="this.$store.state.user" style="padding-left: 5px; font-size: large"></span>
                     <a style="padding-left: 10px; font-size: large" @click="handleLogOut">注销</a>
