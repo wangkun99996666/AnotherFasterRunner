@@ -1,11 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# @Author:梨花菜
-# @File: api_rig.py 
-# @Time : 2019/5/25 9:25
-# @Email: lihuacai168@gmail.com
-# @Software: PyCharm
 import datetime
 
 from django.db.models import Q

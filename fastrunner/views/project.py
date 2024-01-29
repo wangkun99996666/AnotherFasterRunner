@@ -1,3 +1,6 @@
+# !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count
 from django.utils.decorators import method_decorator

@@ -1,3 +1,6 @@
+# !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from typing import Generic, TypeVar
 
 from pydantic import BaseModel

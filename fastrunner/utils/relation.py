@@ -1,3 +1,6 @@
+# !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 # api模块和数据库api表relation对应关系
 API_RELATION = {"default": 66,
                 "energy.ball": 67,

@@ -1,10 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# @Author: 花菜
-# @File: ci.py
-# @Time : 2021/5/25 15:51
-# @Email: lihuacai168@gmail.com
 import datetime
 import json
 import re

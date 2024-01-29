@@ -1,11 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# @Author:梨花菜
-# @File: timer_task.py 
-# @Time : 2018/12/29 13:44
-# @Email: lihuacai168@gmail.com
-# @Software: PyCharm
 import datetime
 
 from fastrunner import models

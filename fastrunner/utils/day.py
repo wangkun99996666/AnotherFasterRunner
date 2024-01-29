@@ -1,3 +1,6 @@
+# !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import datetime
 
 from httprunner.builtin import get_ts_int

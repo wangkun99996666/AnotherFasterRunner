@@ -1,12 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# @Author:梨花菜
-# @File: run_all_auto_case.py
-# @Time : 2019/2/18 15:02
-# @Email: lihuacai168@gmail.com
-# @Software: PyCharm
-
 from django.http import HttpResponse, JsonResponse
 from django.conf import settings
 import json

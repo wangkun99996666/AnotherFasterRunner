@@ -1,3 +1,6 @@
+# !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from copy import deepcopy
 
 from django.core.exceptions import ObjectDoesNotExist
