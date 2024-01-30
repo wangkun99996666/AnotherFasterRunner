@@ -1,12 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# @Author: 花菜
-# @File: base_curd.py
-# @Time : 2022/9/4 17:45
-# @Email: lihuacai168@gmail.com
-
-
 from abc import ABC, abstractmethod
 from typing import Any
 

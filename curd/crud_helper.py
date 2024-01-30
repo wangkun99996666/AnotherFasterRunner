@@ -1,9 +1,5 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author: 花菜
-# @File: crud_helper.py
-# @Time : 2022/9/4 17:59
-# @Email: lihuacai168@gmail.com
 
 import traceback
 from typing import TypeVar
