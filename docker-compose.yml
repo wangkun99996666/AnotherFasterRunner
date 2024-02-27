@@ -44,7 +44,7 @@ services:
 
 
   app:
-    image: fasterrunner_app:latest
+#    image: fasterrunner_app:latest
     build:
       context: .
       dockerfile: Dockerfile
