@@ -34,7 +34,9 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["*"]
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',)
+}
 
 # Token Settings, 30天过期
 INVALID_TIME = 60 * 60 * 24 * 3650
