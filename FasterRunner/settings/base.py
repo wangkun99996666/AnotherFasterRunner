@@ -34,9 +34,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = ["*"]
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',)
-}
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000", "http://192.168.113.19:8000"]
 
 # Token Settings, 30天过期
 INVALID_TIME = 60 * 60 * 24 * 3650
